@@ -5,6 +5,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+::selection {
+  background: rgba(23, 162, 184, 0.3);
+}
+
 section {
   padding: 20px;
   margin: 20px;
@@ -27,7 +31,7 @@ section {
 .wrapper {
   cursor: default;
   padding: 20px;
-  margin: 20px;
+  margin: auto;
   max-width: 1500px;
   display: flex;
   align-items: center;
@@ -41,7 +45,7 @@ section {
   padding: 25px;
   margin: 10px;
   width: calc(33% - 10px);
-  height: 200px;
+  height: 18vh;
 }
 
 .wrapper .box i.quote {
