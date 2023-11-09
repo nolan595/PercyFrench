@@ -41,7 +41,7 @@ section {
 
 .wrapper .box {
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 25px;
   margin: 10px;
   width: calc(33% - 10px);
@@ -85,7 +85,7 @@ section {
   justify-content: center;
   background-color: #e7f5ff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  padding: 40px;
+  padding: 20px;
   margin: 20px;
   border-radius: 20px;
   text-align: center;
@@ -135,15 +135,34 @@ section {
   color: #17a2b8;
 }
 
-@media (max-width: 768px) {
-  #charity {
-    flex-direction: column;
-  }
-}
-
 /* Contact Section */
 #contact {
   text-align: center;
+  background-color: #ffffff;
+  padding: 50px 20px; /* Ample padding for a spacious layout */
+  border-radius: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: auto; /* Center the section */
+  max-width: 600px; /* Not too wide for readability */
+}
+
+#contact p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+#contact b {
+  font-weight: 600;
+}
+
+#contact .fa-phone {
+  /* Adjustments for the phone icon */
+  margin-left: 5px;
+}
+
+#contact p:last-child {
+  margin-top: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -159,5 +178,11 @@ section {
   }
   p {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  #charity {
+    flex-direction: column;
   }
 }
