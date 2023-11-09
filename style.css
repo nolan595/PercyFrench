@@ -28,6 +28,11 @@ section {
   height: 100%;
 }
 
+.intro_text {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+}
+
 /* Review Section */
 
 .wrapper {
