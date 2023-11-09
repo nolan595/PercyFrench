@@ -185,4 +185,7 @@ section {
   #charity {
     flex-direction: column;
   }
+  #contact {
+    margin: 20px;
+  }
 }
