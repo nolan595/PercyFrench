@@ -146,10 +146,25 @@ section {
 #contact {
   text-align: center;
   background-color: #ffffff;
-  padding: 50px 20px; /* Ample padding for a spacious layout */
+  padding: 50px 20px;
   border-radius: 20px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  margin: auto; /* Center the section */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.phone_number {
+  display: inline; /* Show only on mobile */
+  color: #17a2b8; /* Theme color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: 600; /* Make it bold to stand out */
+  transition: color 0.3s ease; /* Smooth color transition for hover effect */
+  padding: 5px 10px; /* Add some padding for a larger click area */
+  border-radius: 5px; /* Optional: round the corners for a button-like feel */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.phone_number_text {
+  display: none; /* Hide the text by default */
 }
 
 #contact p {
@@ -190,5 +205,14 @@ section {
 @media (max-width: 767px) {
   #contact {
     margin: 20px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .phone_number {
+    display: none; /* Hide the link */
+  }
+  .phone_number_text {
+    display: inline; /* Show the text */
   }
 }
