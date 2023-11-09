@@ -75,23 +75,18 @@ section {
 
 .review {
   display: grid;
-
   place-items: center;
 }
 /* Charity Section */
 #charity {
   background-color: #e7f5ff;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Contact Section */
-#contact form {
-  display: flex;
-  flex-direction: column;
-}
-
-#contact input,
-#contact button {
-  margin: 10px 0;
+#contact {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
