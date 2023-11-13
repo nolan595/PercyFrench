@@ -1,0 +1,54 @@
+/* Contact Section */
+#contact {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.phone_number {
+  display: inline;
+  color: #17a2b8;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.phone_number_text {
+  display: none;
+}
+
+#contact p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+#contact b {
+  font-weight: 600;
+}
+
+#contact .fa-phone {
+  /* Adjustments for the phone icon */
+  margin-left: 5px;
+}
+
+#contact p:last-child {
+  margin-top: 10px;
+}
+
+@media (min-width: 480px) {
+  .phone_number {
+    display: none; /* Hide the link */
+  }
+  .phone_number_text {
+    display: inline; /* Show the text */
+  }
+  #contact {
+    margin: 20px auto;
+  }
+}

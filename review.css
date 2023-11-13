@@ -1,0 +1,114 @@
+/* Review Section */
+.carousel-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.review {
+  display: grid;
+  place-items: center;
+  display: none;
+}
+
+.wrapper {
+  cursor: default;
+  margin: 20px auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wrapper .box {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 10px;
+  width: calc(40% - 10px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.box i.quote {
+  font-size: 20px;
+  color: #17a2b8;
+}
+
+.box .content {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box .info .name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.box .info .stars {
+  margin-top: 2px;
+}
+
+.box .info .stars {
+  margin-top: 2px;
+  color: #17a2b8;
+}
+
+.swiper {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+  height: 300px;
+}
+
+.swiper-slide {
+  width: 100%; /* Ensures each slide takes the full width */
+  box-sizing: border-box; /* Includes padding and border in the width and height */
+  padding: 20px; /* Adjust as needed */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .review-swiper {
+    display: block; /* Show swiper */
+  }
+  .review {
+    display: none; /* Hide review */
+  }
+}
+
+/* For screens larger than 480px */
+@media (min-width: 481px) {
+  .review-swiper {
+    display: none; /* Hide swiper */
+  }
+  .review {
+    display: block; /* Show review */
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper .box {
+    width: calc(75% - 10px);
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 702) {
+  .wrapper .box {
+    width: 100%;
+  }
+  p {
+    font-size: 12px;
+  }
+}
