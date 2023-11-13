@@ -10,7 +10,6 @@
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     
-    <link rel="stylesheet" href="test.css" />
     <link rel="stylesheet" href="review.css" />
     <link rel="stylesheet" href="charity.css" />
     <link rel="stylesheet" href="contact.css" />
@@ -25,7 +24,11 @@
       crossorigin="anonymous"
     ></script>
     <!-- Top Section -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 197 52" fill="none">
+      <path d="M1 26C31.3333 -7.33333 53 -7.33333 66 26C79 59.3333 100.667 59.3333 131 26C161.333 -7.33333 183 -7.33333 196 26" stroke="#FED356" stroke-width="2"/>
+    </svg> -->
     <section id="hero">
+
       <img src="Images/percy&writing.png" alt="Percy French" />
       <p class="intro_text">
         The life and Music of Percy French will take you on a musical journey
@@ -33,12 +36,30 @@
       </p>
     </section>
 
+    <!-- Charity Section -->
+    <section id="charity">
+      <div class="charity-total">
+        <h2>Total raised to date:</h2>
+        <p class="raised-amount">€110,000</p>
+
+        
+      </div>
+      <div class="charity-quote">
+        <p>
+          <blockquote>
+            Thanks to the troubadours we raised over €5000 for the Mater
+            Foundation</blockquote> - Angi McNulty Oct 2023
+        </p>
+        
+      </div>
+    </section>
+
      <!-- Review Section  -->
     <div class="review">
       <div class="wrapper">
         <div class="box">
           <i class="fas fa-quote-left quote"></i>
-          <p>
+          <p class="review-content">
             An unforgettable show with thrilling music and a lively, fun-filled
             atmosphere—definitely a night to remember!
           </p>
@@ -60,7 +81,7 @@
 
         <div class="box">
           <i class="fas fa-quote-left quote"></i>
-          <p>
+          <p class="review-content">
             We were completely hooked, singing along with the Troubadours' every
             song, from beginning to end.
           </p>
@@ -82,7 +103,7 @@
 
         <div class="box">
           <i class="fas fa-quote-left quote"></i>
-          <p>
+          <p class="review-content">
             The show was a blast—totally engaging from the get-go, we loved
             every second!
           </p>
@@ -104,8 +125,8 @@
 
         <div class="box">
           <i class="fas fa-quote-left quote"></i>
-          <p>These guys should be on Broadway!</p>
-          <br />
+          <p class="review-content">These guys should be on Broadway!</p>
+          <br>
           <div class="content">
             <div class="info">
               <div class="name">Stephaine Mangan</div>
@@ -124,6 +145,7 @@
       </div>
     </div>
 
+    <!-- Review Section Swiper for mobile -->
     <div class="review-swiper">
       <!-- Slider main container -->
     <div class="swiper">
@@ -133,7 +155,7 @@
         <div class="swiper-slide">
           <div class="box">
             <i class="fas fa-quote-left quote"></i>
-            <p>
+            <p class="review-content">
               An unforgettable show with thrilling music and a lively,
               fun-filled atmosphere—definitely a night to remember!
             </p>
@@ -157,9 +179,8 @@
         <div class="swiper-slide">
           <div class="box">
             <i class="fas fa-quote-left quote"></i>
-            <p>These guys should be on Broadway!</p>
-            <br />
-            <br />
+            <p class="review-content">These guys should be on Broadway!</p>
+
             <div class="content">
               <div class="info">
                 <div class="name">Stephaine Mangan</div>
@@ -179,7 +200,7 @@
         <div class="swiper-slide">
           <div class="box">
             <i class="fas fa-quote-left quote"></i>
-            <p>
+            <p class="review-content">
               The show was a blast—totally engaging from the get-go, we loved
               every second!
             </p>
@@ -203,7 +224,7 @@
         <div class="swiper-slide">
           <div class="box">
             <i class="fas fa-quote-left quote"></i>
-            <p>
+            <p class="review-content">
               We were completely hooked, singing along with the Troubadours'
               every song, from beginning to end.
             </p>
@@ -223,7 +244,7 @@
             </div>
           </div>
         </div>
-        ...
+        
       </div>
 
       <div class="swiper-pagination"></div>
@@ -232,22 +253,7 @@
 
     </div>
     
-    <!-- Charity Section -->
-    
-    <section id="charity">
-      <div class="charity-total">
-        <h2>Total raised to date:</h2>
-        <p class="raised-amount">€110,000</p>
-      </div>
-      <div class="charity-quote">
-        <p>
-          <blockquote>
-            Thanks to the troubadours we raised over €5000 for the Mater
-            Foundation</blockquote> - Angi McNulty Oct 2023
-        </p>
-        
-      </div>
-    </section>
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -259,6 +265,8 @@
         <span class="phone_number_text">(353) 86 245 4223</span>
       </p>
     </section>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

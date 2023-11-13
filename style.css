@@ -10,17 +10,24 @@ body {
   background: rgba(23, 162, 184, 0.3);
 }
 
-section {
+/* section {
   padding: 20px;
   margin: 20px auto;
   border-radius: 20px;
   max-width: 1200px;
-}
+} */
 
 /* Top Section */
 #hero {
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 20px;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
   background-color: #f0f0f0;
   text-align: center;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #hero img {
@@ -31,4 +38,15 @@ section {
 .intro_text {
   font-family: "Josefin Sans", sans-serif;
   font-style: italic;
+}
+
+svg {
+  position: absolute;
+  transform: rotate(-39deg);
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  rotate: -39;
+  overflow: hidden;
+  z-index: -1; /* Ensures the SVG is behind the content */
 }

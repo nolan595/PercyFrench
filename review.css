@@ -18,6 +18,28 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.swiper-slide .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.swiper-slide .box {
+  flex: 1;
+  min-height: 250px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box .review-content {
+  flex-grow: 1;
 }
 
 .wrapper .box {
