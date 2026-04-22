@@ -1,0 +1,20 @@
+# Next.js
+.next/
+out/
+
+# Dependencies
+node_modules/
+
+# Misc
+.DS_Store
+*.pem
+.env
+.env.local
+.env.*.local
+
+# Debug
+npm-debug.log*
+pnpm-debug.log*
+
+# Playwright
+.playwright-mcp/
