@@ -53,7 +53,7 @@ export default function ImpactStats() {
               color: 'var(--color-primary-light)',
             }}
           >
-            €<CountUp target={127000} />
+            €<CountUp target={147000} />
           </h2>
           <p className="text-xl md:text-2xl font-light text-emerald-100 mb-12">
             raised for charity to date
