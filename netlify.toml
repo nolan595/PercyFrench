@@ -4,3 +4,5 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  # Static export — Next.js Runtime not needed
+  NETLIFY_SKIP_FRAMEWORK_DETECTION = "1"
